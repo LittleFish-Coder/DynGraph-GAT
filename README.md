@@ -7,3 +7,4 @@ Authors:
 - [Chih-Yun Lin](https://github.com/salmoniscute)
 - [Cheng-Te Lin](https://sites.google.com/view/chengteli/) (Advisor)
 
+check the paper [here](./ITAOI.pdf).
