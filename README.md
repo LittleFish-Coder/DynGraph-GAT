@@ -5,6 +5,6 @@ This paper is accepted by the 2025 ITAOI (The 23rd Conference on Information Tec
 Authors:
 - [Chen-Yang Yu](https://github.com/LittleFish-Coder) (First Author)
 - [Chih-Yun Lin](https://github.com/salmoniscute)
-- [Cheng-Te Lin](https://sites.google.com/view/chengteli/) (Advisor)
+- [Cheng-Te Li](https://sites.google.com/view/chengteli/) (Advisor)
 
 check the paper [here](./ITAOI.pdf).
