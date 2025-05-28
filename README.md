@@ -8,3 +8,4 @@ Authors:
 - [Cheng-Te Li](https://sites.google.com/view/chengteli/) (Advisor)
 
 check the paper [here](./ITAOI.pdf).
+check the slides [here](./DynGraph-GAT.pdf).
