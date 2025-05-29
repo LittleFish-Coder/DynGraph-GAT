@@ -1,0 +1,88 @@
+\documentclass[10pt]{article}
+
+\usepackage[a4paper, left=3.17cm, right=3.17cm, top=2.54cm, bottom=2.54cm]{geometry}
+\usepackage{graphicx}
+\usepackage{times}
+\usepackage{setspace}
+\usepackage{titlesec}
+\usepackage{titling}
+\usepackage{textcomp}
+\usepackage{lipsum}
+
+\setstretch{1.0}
+\pagenumbering{gobble}  % 不顯示頁碼
+\date{}
+
+% 摘要與標題樣式設定
+\titleformat{\section}
+  {\fontsize{12pt}{14pt}\bfseries\centering}
+  {}{0em}{}
+
+% Title
+\title{\fontsize{16pt}{18pt}\selectfont\bfseries DynGraph-GAT: Adaptive Edge Construction for Content-Based Few-Shot Fake News Detection}
+
+% Authors
+\author{
+\makebox[\textwidth]{  % 將三欄平均分佈於整行
+\begin{minipage}[t]{0.3\textwidth}
+\centering
+{\fontsize{12pt}{14pt}\selectfont\bfseries
+Chen-Yang Yu\\
+AI Robotics\\
+National Cheng Kung\\
+University\\
+chenyangyu.cs@gmail.com}
+\end{minipage}
+\hfill
+\begin{minipage}[t]{0.3\textwidth}
+\centering
+{\fontsize{12pt}{14pt}\selectfont\bfseries
+Chih-Yun Lin\\
+CSIE\\
+National Cheng Kung\\
+University\\
+chihyunlin@gmail.com}
+\end{minipage}
+\hfill
+\begin{minipage}[t]{0.3\textwidth}
+\centering
+{\fontsize{12pt}{14pt}\selectfont\bfseries
+Cheng-Te Li\\
+CSIE\\
+National Cheng Kung\\
+University\\
+chengte@ncku.edu.tw}
+\end{minipage}
+}
+}
+
+
+
+\begin{document}
+
+\maketitle
+
+\vspace{1em}
+
+% Abstract title
+\begin{center}
+    {\fontsize{12pt}{14pt}\bfseries Abstract}
+\end{center}
+
+% Abstract content
+{\fontsize{10pt}{12pt}\selectfont
+Fake news detection traditionally relies on user propagation patterns, but such data is increasingly difficult to obtain due to privacy concerns and sophisticated evasion tactics. We address this challenge by proposing DynGraph-GAT, a novel framework that operates solely on news content without requiring user interaction data. Our approach introduces dynamic threshold graph construction that adaptively determines edge connections based on semantic similarity statistics, overcoming limitations of fixed-topology methods.
+
+We specifically target few-shot learning scenarios (3–16 samples per class) that reflect real-world constraints in emerging topics and resource-limited communities. DynGraph-GAT combines RoBERTa embeddings with Graph Attention Networks, enabling effective representation learning from limited examples through neighborhood message passing.
+
+Extensive experiments on benchmark datasets (PolitiFact and GossipCop) demonstrate that our framework achieves 0.67 F1-score with only 3 samples per class, outperforming traditional approaches by 6.8\% F1-score. Analysis reveals three key insights: (1) semantic relationships between news items contain sufficient signals for authenticity verification, (2) adaptive edge construction improves graph signal propagation in sparse data settings, and (3) content-centric approaches can match propagation-dependent methods while offering greater privacy protection.
+}
+
+\vspace{1em}
+
+% Keywords
+{\fontsize{10pt}{12pt}\selectfont
+\textbf{Keywords:} Fake News Detection, Few-Shot Learning, Graph Neural Networks, Dynamic Thresholding, Semantic Similarity
+}
+
+\end{document}
